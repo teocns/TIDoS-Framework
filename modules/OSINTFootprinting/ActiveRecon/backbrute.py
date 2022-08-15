@@ -94,7 +94,7 @@ def backbrute(web):
                  
 
     print(C+' [*] Path to file to be used '+O+'(Default: files/fuzz-db/backdoor_paths.lst)...'+C)
-    fil = input(C+' [§] Your input (Press Enter if default) :> ')
+    fil = input(C+' [$] Your input (Press Enter if default) :> ')
     if fil == '':
         fil = 'files/fuzz-db/backdoor_paths.lst'
     else:

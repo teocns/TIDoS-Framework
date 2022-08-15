@@ -60,7 +60,7 @@ def arp():
                 mac = after.split("(")[0]
             else:
                 after = ""
-                mac = "[§:AT:TA:CK:ER:§]"
+                mac = "[$:AT:TA:CK:ER:$]"
             macs.append(mac)
             if "(" in after:
                 manif = after.split("(")[1].split(")")[0]

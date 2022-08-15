@@ -161,11 +161,11 @@ def service0x00(host):
     from core.methods.print import pscan
     pscan("service detection")
     if properties["INIT"][1] == " ":
-        start_port = input(C+' [§] Enter initial port :> ')
+        start_port = input(C+' [$] Enter initial port :> ')
     else:
         start_port = properties["INIT"][1]
     if properties["FIN"][1] == " ":
-        end_port = input(C+' [§] Enter ending port :> ')
+        end_port = input(C+' [$] Enter ending port :> ')
     else:
         end_port = properties["FIN"][1]
 

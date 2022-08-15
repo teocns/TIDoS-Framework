@@ -93,7 +93,7 @@ def logbrute(web):
     print(R+'    ---<>----<>----<>----<>----<>----<>--\n')
                  
     print(C+' [*] Path to file to be used '+O+'(Default: files/fuzz-db/log_paths.lst)...'+C)
-    fil = input(C+' [§] Your input (Press Enter if default) :> ')
+    fil = input(C+' [$] Your input (Press Enter if default) :> ')
     if fil == '':
         fil = 'files/fuzz-db/log_paths.lst'
     else:

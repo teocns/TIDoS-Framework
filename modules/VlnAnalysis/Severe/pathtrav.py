@@ -79,7 +79,7 @@ def pathtrav(web):
         command += ["--attack", attack]
         
         if properties["COOKIE"][1] == " ":
-            input_cookie = input("\n [§] Authentication cookie (in cookie header format, without Cookie:) [Enter if none] :> ")
+            input_cookie = input("\n [$] Authentication cookie (in cookie header format, without Cookie:) [Enter if none] :> ")
         elif properties["COOKIE"][1].lower() == "none":
             input_cookie = ""
         else:

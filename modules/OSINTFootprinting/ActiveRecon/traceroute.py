@@ -40,7 +40,7 @@ def traceroute(web):
     m = input(C+' [?] Do you want to fragment the packets? (y/n) :> ')
     if m == 'y' or m == 'Y':
         print(GR+' [!] Using fragmented packets...')
-        p = input(C+' [§] Enter the network type to be used [(I)CMP/(T)CP] :> ')
+        p = input(C+' [$] Enter the network type to be used [(I)CMP/(T)CP] :> ')
         if p == 'icmp' or p == 'ICMP' or p == 'I' or p == 'i':
             print(GR+' [*] Using ICMP ECHO type for traceroute...')
             w = input(C+' [*] Enable socket level debugging? (y/n) :> ')
@@ -76,7 +76,7 @@ def traceroute(web):
             traceroute(web)
     elif m == 'n' or m == 'N':
         print(GR+' [!] Using unfragmented packets...')
-        p = input(C+' [§] Enter the network type to be used (ICMP/TCP) :> ')
+        p = input(C+' [$] Enter the network type to be used (ICMP/TCP) :> ')
         if p == 'icmp' or p == 'ICMP' or p == 'I' or p == 'i':
             print(GR+' [*] Using ICMP ECHO type for traceroute...')
             w = input(C+' [*] Enable socket level debugging? (y/n) :> ')

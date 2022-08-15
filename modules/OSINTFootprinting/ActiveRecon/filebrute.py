@@ -49,54 +49,54 @@ def filebrute(web):
     print(B+'  [A]'+C+' The Auto-Awesome Module\n')
     print(B+'  [99]'+C+' Back\n')
     time.sleep(0.3)
-    v = input(C+'  [§] TID'+C+' :> ' + color.END)
+    v = input(C+'  [$] TID'+C+' :> ' + color.END)
     print('')
     if v.strip() == '1':
         print(B+' [!] Type Selected :'+C+' Backdoor Brute')
         backbrute(web)
-        input(C+' [§] Press '+GR+'Enter'+C+' to continue...')
+        input(C+' [$] Press '+GR+'Enter'+C+' to continue...')
         print('\n\n')
         filebrute(web)
 
     elif v.strip() == '2':
         print(B+' [!] Type Selected :'+C+' Backup Brute')
         backupbrute(web)
-        input(C+' [§] Press '+GR+'Enter'+C+' to continue...')
+        input(C+' [$] Press '+GR+'Enter'+C+' to continue...')
         print('\n\n')
         filebrute(web)
 
     elif v.strip() == '3':
         print(B+' [!] Type Selected :'+C+' Dot File Brute')
         dotbrute(web)
-        input(C+' [§] Press '+GR+'Enter'+C+' to continue...')
+        input(C+' [$] Press '+GR+'Enter'+C+' to continue...')
         print('\n\n')
         filebrute(web)
 
     elif v.strip() == '4':
         print(B+' [!] Type Selected :'+C+' Password Brute')
         passbrute(web)
-        input(C+' [§] Press '+GR+'Enter'+C+' to continue...')
+        input(C+' [$] Press '+GR+'Enter'+C+' to continue...')
         print('\n\n')
         filebrute(web)
 
     elif v.strip() == '5':
         print(B+' [!] Type Selected :'+C+' Proxy Brute')
         proxybrute(web)
-        input(C+' [§] Press '+GR+'Enter'+C+' to continue...')
+        input(C+' [$] Press '+GR+'Enter'+C+' to continue...')
         print('\n\n')
         filebrute(web)
 
     elif v.strip() == '6':
         print(B+' [!] Type Selected :'+C+' Multiple Indices')
         indexmulbrute(web)
-        input(C+' [§] Press '+GR+'Enter'+C+' to continue...')
+        input(C+' [$] Press '+GR+'Enter'+C+' to continue...')
         print('\n\n')
         filebrute(web)
 
     elif v.strip() == '7':
         print(B+' [!] Type Selected :'+C+' Log Locations')
         logbrute(web)
-        input(C+' [§] Press '+GR+'Enter'+C+' to continue...')
+        input(C+' [$] Press '+GR+'Enter'+C+' to continue...')
         print('\n\n')
         filebrute(web)
 
@@ -140,7 +140,7 @@ def filebrute(web):
 
         print(B+' [!] All scantypes have been tested on target...')
         time.sleep(4)
-        input(C+' [§] Press '+GR+'Enter'+C+' to continue...')
+        input(C+' [$] Press '+GR+'Enter'+C+' to continue...')
         print(B+' [*] Going back to menu...')
 
     elif v == '99':

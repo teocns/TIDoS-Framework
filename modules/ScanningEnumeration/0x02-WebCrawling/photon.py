@@ -41,7 +41,7 @@ def photon(web):
     time.sleep(0.5)
     pscan("photon")
     if properties["ROOT"][1] == " ":
-        root = input(" [§] Enter the root URL :> ")
+        root = input(" [$] Enter the root URL :> ")
     else:
         root = properties["ROOT"][1]
         
@@ -52,10 +52,10 @@ def photon(web):
             except Exception:
                 #in case of buggy photon pip installation
                 help_photon = subprocess.call(["python3", "core/lib/Photon/photon.py", "--help"])
-            arguments = input(" [§] Enter arguments (as you would after $photon -u ROOT on the commandline) :> ")
+            arguments = input(" [$] Enter arguments (as you would after $photon -u ROOT on the commandline) :> ")
             assert "-u " not in arguments and "--url " not in arguments
         except AssertionError:
-            arguments = input(" [-] Argument '-u' already present in command string.\n [§] Enter arguments (as you would after $photon -u ROOT on the commandline) :> ")
+            arguments = input(" [-] Argument '-u' already present in command string.\n [$] Enter arguments (as you would after $photon -u ROOT on the commandline) :> ")
     else:
         arguments = properties["ARGS"][1]
         

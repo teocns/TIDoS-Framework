@@ -119,7 +119,7 @@ def crawler3(web):
         time.sleep(0.7)
         print(R+'  WARNING : Use this with CAUTION!\n')
         if properties["LIMIT"][1] == " ":
-            m = input(GR+' [§] No. of links to be crawled (eg 100) :> ')
+            m = input(GR+' [$] No. of links to be crawled (eg 100) :> ')
         else:
             m = properties["LIMIT"][1]
         print(O+' [!] Crawling limit set to :'+C+color.TR3+C+G+str(m)+C+color.TR2+C)

@@ -113,11 +113,11 @@ def scan0x00(target):
         print(''+R + '   [Reliable only in LA Networks]\n')
 
         if properties["INIT"][1] == " ":
-            min_port = input(C+' [§] Enter initial port :> ')
+            min_port = input(C+' [$] Enter initial port :> ')
         else:
             min_port = properties["INIT"][1]
         if properties["FIN"][1] == " ":
-            max_port = input(C+' [§] Enter ending port :> ')
+            max_port = input(C+' [$] Enter ending port :> ')
         else:
             max_port = properties["FIN"][1]
         openfil_ports = []

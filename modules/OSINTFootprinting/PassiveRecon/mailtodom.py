@@ -27,11 +27,11 @@ properties = {}
 
 def getRes0x00():
     requests = session()
-    email = input(C+' [§] Enter the email :> '+R)
+    email = input(C+' [$] Enter the email :> '+R)
     if '@' in email and '.' in email:
         pass
     else:
-        email = input(C+' [§] Enter a valid email :> '+R)
+        email = input(C+' [$] Enter a valid email :> '+R)
 
     print(GR+' [*] Setting headers... (behaving as a browser)...')
     time.sleep(0.7)

@@ -1360,7 +1360,7 @@ html5_entities = {
     'searhk': '⤥',
     'searr': '↘',
     'searrow': '↘',
-    'sect': '§',
+    'sect': '$',
     'semi': ';',
     'seswar': '⤩',
     'setminus': '∖',

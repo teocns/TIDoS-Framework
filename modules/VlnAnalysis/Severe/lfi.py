@@ -137,8 +137,8 @@ def getFile0x00():
         if not evasion:
             print(GR+' [*] Importing filepath...')
             if properties["DICT"][1] == " ":
-                print(O+' [§] Enter path to file (default: files/fuzz-db/lfi_paths.lst)...')
-                w = input(O+' [§] Your input (Press Enter if default) :> '+C)
+                print(O+' [$] Enter path to file (default: files/fuzz-db/lfi_paths.lst)...')
+                w = input(O+' [$] Your input (Press Enter if default) :> '+C)
             elif properties["DICT"][1].lower() == "none":
                 w = ""
             else:
@@ -267,7 +267,7 @@ def lfi(web):
 
     print(GR+' [*] Initiating '+R+'Parameter Based Check...')
     if properties["PARAM"][1] == " ":
-        param = input(O+' [§] Parameter Path (eg. /vuln/fetch.php?q=lmao) :> ')
+        param = input(O+' [$] Parameter Path (eg. /vuln/fetch.php?q=lmao) :> ')
     else:
         param = properties["PARAM"][1]
     if not param.startswith('/'):

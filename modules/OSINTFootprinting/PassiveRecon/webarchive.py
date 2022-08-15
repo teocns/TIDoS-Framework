@@ -39,15 +39,15 @@ def getRes0x00(web, lvl2):
     requests = session()
     error = 0
     if properties["START"][1] == " ":
-        fdate = input(C+' [§] Year from when results to be fetched (eg. 2010) :> '+C)
+        fdate = input(C+' [$] Year from when results to be fetched (eg. 2010) :> '+C)
     else:
         fdate = properties["START"][1]
     if properties["END"][1] == " ":
-        tdate = input(GR+' [§] Year till when results to be fetched (eg. 2017) :> '+C)
+        tdate = input(GR+' [$] Year till when results to be fetched (eg. 2017) :> '+C)
     else:
         tdate = properties["END"][1]
     if properties["LIMIT"][1] == " ":
-        limit = input(C+' [§] No. of results (eg. 50) :> '+C)
+        limit = input(C+' [$] No. of results (eg. 50) :> '+C)
     else:
         limit = properties["LIMIT"][1]
 

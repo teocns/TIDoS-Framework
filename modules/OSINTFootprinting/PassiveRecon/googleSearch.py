@@ -33,9 +33,9 @@ def googleSearch():
         print(R+'\n    G O O G L E   S E A R C H')
         print(R+'   ---<>----<>----<>----<>----\n')
                     
-        lol = input(O+ " [§] QUERY :> " + color.END)
+        lol = input(O+ " [$] QUERY :> " + color.END)
         time.sleep(0.8)
-        m = input(C+' [§] Search limit (not recommended above 30) :> ')
+        m = input(C+' [$] Search limit (not recommended above 30) :> ')
         print(C+ " [!] Below are the list of websites with info on '" +lol+ "'")
         x = search(lol, tld='com', lang='es', stop=int(m))
         for url in x:

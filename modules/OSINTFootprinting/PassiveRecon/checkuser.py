@@ -76,7 +76,7 @@ def checkuser(web):
         print(" [!] No usernames have been set for target {}".format(web.fullurl))
         a = "a"
         while a != "":
-            a = input(" [§] Add username (enter if done) :> ")
+            a = input(" [$] Add username (enter if done) :> ")
             if a != "":
                 web.usernames.append(a)
     

@@ -52,11 +52,11 @@ def sqlbrute(web):
     try:
         print(GR+' [*] Testing target...')
         ip = socket.gethostbyname(web.split('//')[1])
-        m = input(O+' [§] Use IP '+R+str(ip)+O+'? (y/n) :> ')
+        m = input(O+' [$] Use IP '+R+str(ip)+O+'? (y/n) :> ')
         if m == 'y' or m == 'Y':
             pass
         elif m == 'n' or m == 'N':
-            ip = input(O+' [§] Enter IP :> ')
+            ip = input(O+' [$] Enter IP :> ')
 
         print(G+' [+] Target appears online...')
 

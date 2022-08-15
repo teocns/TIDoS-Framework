@@ -318,7 +318,7 @@ def pathtrav(web):
         else:
             parallel = properties["PARALLEL"][1] == "1"
         if properties["COOKIE"][1] == " ":
-            input_cookie = input("\n [§] Got cookies? [Enter if none] :> ")
+            input_cookie = input("\n [$] Got cookies? [Enter if none] :> ")
         elif properties["COOKIE"][1].lower() == "none":
             input_cookie = ""
         else:
@@ -340,7 +340,7 @@ def pathtrav(web):
             web00 = web + '/' + param
 
         if properties["QUERY"][1] == " ":
-            input_query = input("\n [§] Query Attack? [Enter if not] :> ")
+            input_query = input("\n [$] Query Attack? [Enter if not] :> ")
         elif properties["QUERY"][1] == "0":
             input_query = ""
         else:
@@ -349,7 +349,7 @@ def pathtrav(web):
         if input_query != "":
             query[0] = True
             if properties["PARAM"][1] == " ":
-                param = input(" [§] Enter parameter :> ")
+                param = input(" [$] Enter parameter :> ")
             else:
                 param = properties["PARAM"][1]
             web00 = web00 + "?" + param + "="

@@ -415,7 +415,7 @@ class TIDcon(Cmd):
             def filecheck():
                 if not os.path.exists(varis.phpsploit):
                     print(R + " [-] " + "\033[0m" + color.UNDERLINE + "\033[1m" + "No phpsploit installation under {}".format(varis.phpsploit) + color.END)
-                    phpsplt = input(" [§] Enter path to phpsploit script :> ")
+                    phpsplt = input(" [$] Enter path to phpsploit script :> ")
                     varis.phpsploit = phpsplt
                     filecheck()
             filecheck()
