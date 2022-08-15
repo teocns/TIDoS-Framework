@@ -51,7 +51,7 @@ def inputin(target):
                 po = wspl[1]
         custport = input(" [?] Does the site use a custom port? (enter if not) :> ")
         if custport != "":
-            inport = input(" [§] Enter port :> ")
+            inport = input(" [$] Enter port :> ")
             try:
                 port = int(inport)
                 assert port in range(1, 65535)
