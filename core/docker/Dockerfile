@@ -27,7 +27,7 @@ RUN apt update && \
     apt-get clean
 
 # Installing TIDoS-Framework
-RUN git clone https://github.com/0xinfection/tidos-framework.git && \
+RUN git clone https://github.com/teocns/tidos-framework.git && \
     cd tidos-framework && \
     python3 -m pip install --upgrade --force pip && \
     python3 -m pip install --upgrade --force wheel && \
